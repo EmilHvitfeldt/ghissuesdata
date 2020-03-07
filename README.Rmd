@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# ghissuesdata
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of ghissuesdata is to provide easy access to data from [here](https://github.com/explosion/projects/tree/master/textcat-docs-issues).
+
+## Installation
+
+You can install ghissuesdata
+
+```{r, eval=FALSE}
+# install.packages("remotes")
+remotes::install_github("EmilHvitfeldt/ghissuesdata")
+```
+
+## Example
+
+```{r}
+library(ghissuesdata)
+
+str(github_issues_training)
+
+str(github_issues_eval)
+```
+
+
